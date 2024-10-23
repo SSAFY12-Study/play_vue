@@ -47,9 +47,9 @@ onMounted(() => {
       <section>
         <div>
           <h1>
-            <span class="d-print-block">catch</span>
-            <span class="d-print-block">trip</span>
-            <span class="d-print-block">ping</span>
+            <span>catch</span>
+            <span>trip</span>
+            <span>ping</span>
           </h1>
           <p>with boni hyugi</p>
         </div>
@@ -99,6 +99,7 @@ onMounted(() => {
 
 <style scoped>
 @layer orig {
+
   .container {
     color: black;
     transition: 0.3s ease-out;
@@ -113,15 +114,6 @@ onMounted(() => {
     max-width: 100vw;
     overflow-x: hidden;
     position: relative;
-  }
-
-  section:not(#sectionPin, .pin-wrap-sticky) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 2rem;
-    padding: 50px 10vw;
-    margin: auto;
-    place-items: center;
   }
 
   .container img {
@@ -145,17 +137,38 @@ onMounted(() => {
     hyphens: auto;
   }
 
+  .container h1 span {
+    display: block;
+  }
+
   .container h2 {
     font-size: 2rem;
     max-width: 400px;
+  }
+
+  .container > p {
+    position: absolute;
+    bottom: 10vw;
+    right: 10vw;
+    width: 200px;
+    line-height: 1.5;
+  }
+
+  .container * {
+    box-sizing: border-box;
   }
 
   .credit a {
     color: black;
   }
 
-  .container * {
-    box-sizing: border-box;
+  section:not(#sectionPin, .pin-wrap-sticky) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    padding: 50px 10vw;
+    margin: auto;
+    place-items: center;
   }
 
   #sectionPin {
@@ -179,12 +192,5 @@ onMounted(() => {
     padding: 0 5vmax;
   }
 
-  .container > p {
-    position: absolute;
-    bottom: 10vw;
-    right: 10vw;
-    width: 200px;
-    line-height: 1.5;
-  }
 }
 </style>
