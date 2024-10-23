@@ -1,11 +1,5 @@
-<script setup>
+<script setup></script>
 
-</script>
+<template>로그아웃 완료!</template>
 
-<template>
-로그아웃 완료!
-</template>
-
-<style scoped>
-
-</style>
+<style scoped></style>

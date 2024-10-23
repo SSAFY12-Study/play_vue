@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import IconKakaoLogin from '@/components/icons/IconKakaoLogin.vue'
 import { useRouter } from 'vue-router'
 
-const router = useRouter();
+const router = useRouter()
 
 const id = defineModel('id')
 const password = defineModel('password')
@@ -26,7 +26,7 @@ const submit = async event => {
 }
 
 const login = async (username, password) => {
-  const url = '/play/login';
+  const url = '/play/login'
 
   const response = await fetch(url, {
     method: 'POST',
@@ -38,18 +38,18 @@ const login = async (username, password) => {
       username: username,
       password: password,
     }),
-    credentials: 'include'
-  });
+    credentials: 'include',
+  })
 
   if (response.ok) {
-    console.log('Form Login successful!');
-    await router.replace({ name: 'main' });
+    console.log('Form Login successful!')
+    await router.replace({ name: 'main' })
   } else {
-    console.error('Form Login failed:', response.statusText);
-    await router.replace({ name: 'login' });
-    alert('Form Login failed! Please check your credentials.');
+    console.error('Form Login failed:', response.statusText)
+    await router.replace({ name: 'login' })
+    alert('Form Login failed! Please check your credentials.')
   }
-};
+}
 
 const idRules = [
   value => {

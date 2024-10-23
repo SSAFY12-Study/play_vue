@@ -4,22 +4,22 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
+    <!--    <img-->
+    <!--      alt="Vue logo"-->
+    <!--      class="logo"-->
+    <!--      src="@/assets/logo.svg"-->
+    <!--      width="125"-->
+    <!--      height="125"-->
+    <!--    />-->
 
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">홈 페이지</RouterLink>
-      </nav>
-      <nav>
-        <RouterLink to="/test">테스트 페이지</RouterLink>
-      </nav>
-    </div>
+    <!--    <div class="wrapper">-->
+    <!--      <nav>-->
+    <!--        <RouterLink to="/">홈 페이지</RouterLink>-->
+    <!--      </nav>-->
+    <!--      <nav>-->
+    <!--        <RouterLink to="/test">테스트 페이지</RouterLink>-->
+    <!--      </nav>-->
+    <!--    </div>-->
   </header>
   <RouterView />
 </template>
