@@ -43,7 +43,7 @@ onMounted(() => {
 
 <template>
   <body>
-    <div class="container ">
+    <div class="container">
       <section>
         <div>
           <h1>
@@ -99,7 +99,6 @@ onMounted(() => {
 
 <style scoped>
 @layer orig {
-
   .container {
     color: black;
     transition: 0.3s ease-out;
@@ -191,6 +190,5 @@ onMounted(() => {
     min-width: 60vmax;
     padding: 0 5vmax;
   }
-
 }
 </style>

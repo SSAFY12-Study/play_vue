@@ -1,25 +1,11 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
+import AppBarView from '@/components/AppBarView.vue'
 </script>
 
 <template>
   <header>
-    <!--    <img-->
-    <!--      alt="Vue logo"-->
-    <!--      class="logo"-->
-    <!--      src="@/assets/logo.svg"-->
-    <!--      width="125"-->
-    <!--      height="125"-->
-    <!--    />-->
-
-    <!--    <div class="wrapper">-->
-    <!--      <nav>-->
-    <!--        <RouterLink to="/">홈 페이지</RouterLink>-->
-    <!--      </nav>-->
-    <!--      <nav>-->
-    <!--        <RouterLink to="/test">테스트 페이지</RouterLink>-->
-    <!--      </nav>-->
-    <!--    </div>-->
+    <AppBarView></AppBarView>
   </header>
   <RouterView />
 </template>
